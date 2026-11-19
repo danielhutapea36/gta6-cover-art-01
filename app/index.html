@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vice City Cover Maker</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main class="app">
+  <section class="controls" aria-label="Cover editor">
+    <h1>Vice City Cover Maker</h1>
+    <p class="tagline">Your photos, a sunset-neon grade, a poster to share. Everything stays on your machine.</p>
+
+    <section class="group">
+      <h2 id="photos-heading">1 · Photos</h2>
+      <p class="hint">Pick a panel, choose its photo, then drag it on the poster to position it. Scroll to zoom.</p>
+      <div id="panel-list" class="panel-list" aria-labelledby="photos-heading"></div>
+      <label class="fill-all">One photo for every panel
+        <span class="fill-all-row">
+          <input id="fill-all-file" type="file" accept="image/*">
+          <button id="fill-all" type="button">Fill all panels</button>
+        </span>
+      </label>
+      <div class="samples">
+        <span>Try a sample:</span>
+        <button id="sample-pier" type="button">Pier</button>
+        <button id="sample-boulevard" type="button">Boulevard</button>
+      </div>
+    </section>
+
+    <section class="group">
+      <h2>2 · Crop the selected panel</h2>
+      <label>Zoom <input id="zoom" type="range" min="1" max="4" step="0.05" value="1"></label>
+      <label>Move left / right <input id="pan-x" type="range" min="-0.5" max="0.5" step="0.01" value="0"></label>
+      <label>Move up / down <input id="pan-y" type="range" min="-0.5" max="0.5" step="0.01" value="0"></label>
+    </section>
+
+    <section class="group">
+      <h2>3 · Poster layout</h2>
+      <div id="layout-options" class="options"></div>
+    </section>
+
+    <section class="group">
+      <h2>4 · Colour grade</h2>
+      <div id="grade-options" class="options"></div>
+    </section>
+
+    <section class="group">
+      <h2>5 · Caption</h2>
+      <label>Caption <input id="caption" type="text" maxlength="40" value="Sunset Heist"></label>
+      <label>Tagline above it <input id="subcaption" type="text" maxlength="30" value="Vice City"></label>
+    </section>
+
+    <section class="group">
+      <h2>6 · Export</h2>
+      <div id="size-options" class="options"></div>
+      <button id="export" type="button">Export PNG</button>
+      <p id="status" role="status"></p>
+    </section>
+  </section>
+  <canvas id="cover" width="1080" height="1080" aria-label="The cover preview"></canvas>
+</main>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
