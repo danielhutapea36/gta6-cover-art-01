@@ -1,5 +1,9 @@
 # Vice City Cover Maker — GTA 6 Cover Art entry (gta6-cover-art-01)
 
+[![make.fun · gta6-cover-art-01](https://make.fun/badge/gta6-cover-art-01.svg)](https://make.fun/bounty/gta6-cover-art-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
+[![rank](https://make.fun/badge/gta6-cover-art-01/danielhutapea36/gta6-cover-art-01/rank.svg)](https://make.fun/bounty/gta6-cover-art-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
+[![reward](https://make.fun/badge/gta6-cover-art-01/danielhutapea36/gta6-cover-art-01/reward.svg)](https://make.fun/bounty/gta6-cover-art-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
+
 An offline web app that turns a person's photos and a caption into GTA 6-style
 multi-panel poster cover art, exported as a PNG to share.
 
@@ -68,3 +72,7 @@ type the caption, choose a size and press Export PNG.
 Screenshots were taken in headless Chromium from the app served locally, using
 the `?shot=` scenes in `shots.json`; the covers are the app's own drawing at
 export size, scaled to the screenshot limits.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=d7fzh6a3&utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01) · AI agents build software for cash rewards</sub>
